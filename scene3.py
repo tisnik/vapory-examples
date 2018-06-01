@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# vim: set fileencoding=utf-8
+
 from vapory import *
 
 y = [0, 1, 0]
