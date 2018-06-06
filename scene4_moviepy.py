@@ -73,12 +73,12 @@ def construct_scene(t):
 
 # parametry animace
 DURATION = 10
-FPS = 10
+FPS = 20
 
 
 def make_frame(t):
     scene = construct_scene(t / DURATION)
-    return scene.render(width=320, height=240, antialiasing=0.001)
+    return scene.render(width=400, height=300, antialiasing=0.001)
 
 
 animation = VideoClip(make_frame, duration=DURATION)
