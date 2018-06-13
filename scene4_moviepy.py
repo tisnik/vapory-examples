@@ -17,9 +17,12 @@ from vapory import *
 from moviepy.editor import VideoClip
 
 
+# často používané vektory
+x = [1, 0, 0]
 y = [0, 1, 0]
 z = [0, 0, 1]
 
+# vytvoření kamery ve scéně
 camera = Camera('location', [1.65, 5.5,-5.0],
                 'up',       [ 0.0, 1.0, 0.0],
                 'right',    [ 4/3, 0.0, 0.0],
@@ -65,6 +68,7 @@ def construct_scene(t):
 
     csg_object = Difference(box, sphere)
 
+    # složení scény z jednotlivých objektů
     return Scene(camera,
                  objects=[light1, light2, light3, csg_object, plane],
                  included=["colors.inc", "stones.inc", "woods.inc"],

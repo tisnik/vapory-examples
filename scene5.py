@@ -20,9 +20,12 @@ class Torus(POVRayElement):
     """Torus()"""
 
 
+# často používané vektory
+x = [1, 0, 0]
 y = [0, 1, 0]
 z = [0, 0, 1]
 
+# vytvoření kamery ve scéně
 camera = Camera('location', [0, 20, -15],
                 'look_at',  [0, -2, 0])
 
@@ -81,8 +84,10 @@ plane = Plane(y,
                   Finish('reflection', 0.10),
                   'scale', 4))
 
+# složení scény z jednotlivých objektů
 scene = Scene(camera, objects=[light1, light2, plane, torus],
               included=['colors.inc'],
               global_settings=['assumed_gamma 2.2'])
 
+# vykreslení scény do souboru
 scene.render('scene5_vapory.png', width=400, height=300)

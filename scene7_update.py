@@ -20,9 +20,12 @@ class Blob(POVRayElement):
     """Blob()"""
 
 
+# často používané vektory
+x = (1, 0, 0)
 y = (0, 1, 0)
 z = (0, 0, 1)
 
+# vytvoření kamery ve scéně
 camera = Camera('location', ( 0.0, 0.0, -2.5),
                 'up',       ( 0.0, 1.0, 0.0),
                 'right',    ( 4/3, 0.0, 0.0),
@@ -60,8 +63,10 @@ plane = Plane(z,
                   Finish('ambient', 0.1,
                          'diffuse', 0.4)))
 
+# složení scény z jednotlivých objektů
 scene = Scene(camera, objects=(light1, light2, plane, blob),
               included=('colors.inc',),
               global_settings=('assumed_gamma 2.2',))
 
+# vykreslení scény do souboru
 scene.render('scene7_vapory_B.png', width=400, height=300)
