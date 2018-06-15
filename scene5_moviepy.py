@@ -102,9 +102,13 @@ FPS = 20
 
 
 def make_frame(t):
+    """Callback funkce pro vytvoření jednoho snímku videa."""
     scene = construct_scene(t / DURATION)
     return scene.render(width=400, height=300, antialiasing=0.001)
 
 
+# vytvoření objektu typu VideoClip
 animation = VideoClip(make_frame, duration=DURATION)
+
+# vykreslení všech snímků a jejich uložení do video souboru
 animation.write_videofile('scene5.ogv', fps=FPS, progress_bar=True, bitrate="800000")

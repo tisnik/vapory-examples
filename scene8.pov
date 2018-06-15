@@ -9,12 +9,14 @@
 
 #version 3.5;
 
+// načtení všech potřebných externích souborů
 #include "colors.inc"
 
 global_settings {
     assumed_gamma 2.2
 }
 
+// nastavení kamery (pozorovatele)
 camera {
    orthographic                          // vypnutí perspektivy
    location <0, 0, -1>                   // umístění kamery
@@ -24,6 +26,7 @@ camera {
 
 }
 
+// dva světelné zdroje
 light_source {                           // první světelný zdroj
     <2, 10, -10>                         // pozice světelného zdroje
     color red 0.7 green 0.7 blue 0.7     // barva světelného zdroje
@@ -35,6 +38,7 @@ light_source {                           // druhý světelný zdroj
     shadowless
 }
 
+// první objekt - plocha
 plane {                                  // rovina tvořící pozadí scény
     <0, 0, 1>, 2                         // posun a orientace roviny
     hollow on
@@ -58,6 +62,7 @@ texture {
     }
 }
 
+// objekt - implicitní plocha
 blob {
     threshold 0.4                        // hraniční hodnota
     component 1.0, 1.0, < 0, -0.6, 0>    // prvek kostry: síla, poloměr, souřadnice v prostoru
@@ -66,6 +71,7 @@ blob {
     translate <-2.0, -1.2, 0>
 }
 
+// objekt - implicitní plocha
 blob {
     threshold 0.5                        // hraniční hodnota
     component 1.0, 1.0, < 0, -0.6, 0>    // prvek kostry: síla, poloměr, souřadnice v prostoru
@@ -74,6 +80,7 @@ blob {
     translate <-0.65, -1.2, 0>
 }
 
+// objekt - implicitní plocha
 blob {
     threshold 0.6                        // hraniční hodnota
     component 1.0, 1.0, < 0, -0.6, 0>    // prvek kostry: síla, poloměr, souřadnice v prostoru
@@ -82,6 +89,7 @@ blob {
     translate < 0.65, -1.2, 0>
 }
 
+// objekt - implicitní plocha
 blob {
     threshold 0.7                        // hraniční hodnota
     component 1.0, 1.0, < 0, -0.6, 0>    // prvek kostry: síla, poloměr, souřadnice v prostoru
@@ -90,6 +98,7 @@ blob {
     translate < 2.0, -1.2, 0>
 }
 
+// objekt - implicitní plocha
 blob {
     threshold 0.75                       // hraniční hodnota
     component 1.0, 1.0, < 0, -0.6, 0>    // prvek kostry: síla, poloměr, souřadnice v prostoru
@@ -98,6 +107,7 @@ blob {
     translate <-2.0, 1.2, 0>
 }
 
+// objekt - implicitní plocha
 blob {
     threshold 0.8                        // hraniční hodnota
     component 1.0, 1.0, < 0, -0.6, 0>    // prvek kostry: síla, poloměr, souřadnice v prostoru
@@ -106,6 +116,7 @@ blob {
     translate <-0.65, 1.2, 0>
 }
 
+// objekt - implicitní plocha
 blob {
     threshold 0.82                       // hraniční hodnota
     component 1.0, 1.0, < 0, -0.6, 0>    // prvek kostry: síla, poloměr, souřadnice v prostoru
@@ -114,6 +125,7 @@ blob {
     translate < 0.65, 1.2, 0>
 }
 
+// objekt - implicitní plocha
 blob {
     threshold 0.9                        // hraniční hodnota
     component 1.0, 1.0, < 0, -0.6, 0>    // prvek kostry: síla, poloměr, souřadnice v prostoru
