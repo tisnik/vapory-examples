@@ -21,7 +21,7 @@ y = [0, 1, 0]
 z = [0, 0, 1]
 
 # vytvoření kamery ve scéně
-camera = Camera('location', [1.65, 5.5,-5.0],
+camera = Camera('location', [1.65, 5.5, -5.0],
                 'up',       [0.0, 1.0, 0.0],
                 'right',    [ 4/3, 0.0, 0.0],
                 'look_at',  [ 0.0, 0.5,-1.0])
