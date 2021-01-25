@@ -65,7 +65,7 @@ def new_blob(threshold, dx, dy):
                 'translate', (dx, dy, 0))
 
 
-objects=[light1, light2, plane]
+objects = [light1, light2, plane]
 objects.append(new_blob(0.40, -2.00, -1.2))
 objects.append(new_blob(0.50, -0.65, -1.2))
 objects.append(new_blob(0.60,  0.65, -1.2))
