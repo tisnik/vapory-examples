@@ -2,7 +2,7 @@
 # vim: set fileencoding=utf-8
 
 #
-#  (C) Copyright 2018  Pavel Tisnovsky
+#  (C) Copyright 2018, 2021  Pavel Tisnovsky
 #
 #  All rights reserved. This program and the accompanying materials
 #  are made available under the terms of the Eclipse Public License v1.0
@@ -50,6 +50,7 @@ plane = Plane(z,
                           'agate_turb', 0.9),
                   Finish('ambient', 0.1,
                          'diffuse', 0.4)))
+
 
 def new_blob(threshold, dx, dy):
     return Blob('threshold', threshold,
