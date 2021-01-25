@@ -2,7 +2,7 @@
 # vim: set fileencoding=utf-8
 
 #
-#  (C) Copyright 2018  Pavel Tisnovsky
+#  (C) Copyright 2018, 2021  Pavel Tisnovsky
 #
 #  All rights reserved. This program and the accompanying materials
 #  are made available under the terms of the Eclipse Public License v1.0
@@ -26,7 +26,7 @@ y = [0, 1, 0]
 z = [0, 0, 1]
 
 # vytvoření kamery ve scéně
-camera = Camera('location', [ 0.0, 0.0, -2.5],
+camera = Camera('location', [0.0, 0.0, -2.5],
                 'up',       [ 0.0, 1.0, 0.0],
                 'right',    [ 4/3, 0.0, 0.0],
                 'look_at',  [ 0.0, 0.0, 0.0])
