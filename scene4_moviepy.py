@@ -57,6 +57,7 @@ plane = Plane(y,
                           'rotate', [i * 90 for i in z]),
                   Finish('reflection', 0.10)))
 
+
 def construct_scene(t):
     sphere = Sphere([0, 3.3 - 7.0*t, 0],
                     1.8,
