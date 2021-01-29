@@ -13,6 +13,8 @@
 #      Pavel Tisnovsky
 #
 
+"""Blobs/metaballs, vytvoření animované sekvence snímků."""
+
 from vapory import *
 
 
