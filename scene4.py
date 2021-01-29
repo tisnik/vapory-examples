@@ -13,6 +13,8 @@
 #      Pavel Tisnovsky
 #
 
+"""Konstrukce několika snímků pro animaci."""
+
 from vapory import *
 
 # často používané vektory
