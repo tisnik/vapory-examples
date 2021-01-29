@@ -13,6 +13,8 @@
 #      Pavel Tisnovsky
 #
 
+"""Blobs/metaballs."""
+
 from vapory import *
 
 
