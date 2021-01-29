@@ -56,6 +56,7 @@ plane = Plane(z,
 
 
 def new_blob(threshold, dx, dy, t):
+    """Vytvoření nového objektu ve scéně."""
     delta = 0.3 * sin(2*pi*t)
     return Blob('threshold', threshold,
                 'component', 1.0, 1.0, (0, -0.5 - delta, 0),
