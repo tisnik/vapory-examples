@@ -61,6 +61,7 @@ plane = Plane(y,
 
 
 def construct_scene(t):
+    """Funkce volaná pro vytvoření každého snímku v animaci."""
     sphere = Sphere([0, 3.3 - 7.0*t, 0],
                     1.8,
                     Texture(
