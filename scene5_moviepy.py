@@ -56,6 +56,7 @@ plane = Plane(y,
 
 # objekt ve scéně: torus (anuloid)
 def create_torus(t):
+    """Vytvoření objektu ve scéně."""
     return Torus(7.0, 4.0,
                  # spodní (podkladová) textura se základním vzorkem
                  Texture(
