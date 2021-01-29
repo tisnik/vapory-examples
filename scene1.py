@@ -13,6 +13,8 @@
 #      Pavel Tisnovsky
 #
 
+"""Vytvoření jednoduché scény s kamerou, světelným zdrojem a dvojicí objektů."""
+
 from vapory import *
 
 # často používané vektory
@@ -22,9 +24,9 @@ z = [0, 0, 1]
 
 # vytvoření kamery ve scéně
 camera = Camera('location', [0.0, 2.0, -3.0],
-                'up',       [0.0, 1.0, 0.0],
-                'right',    [4/3, 0.0, 0.0],
-                'look_at',  [0.0, 1.0, 2.0])
+                'up',       [0.0, 1.0, +0.0],
+                'right',    [4/3, 0.0, +0.0],
+                'look_at',  [0.0, 1.0, +2.0])
 
 # světelný zdroj s bílou barvou
 light = LightSource([2, 4, -3],
