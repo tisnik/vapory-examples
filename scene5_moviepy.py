@@ -91,6 +91,7 @@ def create_torus(t):
 
 
 def construct_scene(t):
+    """Funkce volaná pro vytvoření každého snímku v animaci."""
     torus = create_torus(t)
 
     return Scene(camera, objects=[light1, light2, plane, torus],
