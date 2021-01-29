@@ -13,6 +13,8 @@
 #      Pavel Tisnovsky
 #
 
+"""Složitější těleso vzniklé s využitím CSG - Constructive Solid Geometry."""
+
 from vapory import *
 
 # často používané vektory
