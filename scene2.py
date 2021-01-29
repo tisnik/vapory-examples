@@ -13,6 +13,8 @@
 #      Pavel Tisnovsky
 #
 
+"""Vytvoření jednoduché scény s kamerou, třemi světelnými zdroji a dvojicí objektů."""
+
 from vapory import *
 
 # často používané vektory
