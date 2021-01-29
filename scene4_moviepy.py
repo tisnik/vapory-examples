@@ -13,6 +13,8 @@
 #      Pavel Tisnovsky
 #
 
+"""Konstrukce několika snímků pro animaci, export pro MoviePy."""
+
 from vapory import *
 from moviepy.editor import VideoClip
 
