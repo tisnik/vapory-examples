@@ -70,6 +70,7 @@ def new_blob(threshold, dx, dy, t):
 
 
 def construct_scene(t):
+    """Funkce volaná pro vytvoření každého snímku v animaci."""
     objects = [light1, light2, plane]
     objects.append(new_blob(0.40, -2.00, -1.2, t))
     objects.append(new_blob(0.50, -0.65, -1.2, t))
